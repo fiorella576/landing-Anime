@@ -1,0 +1,220 @@
+/* 1. RESET Y BASE */
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    color: #333;
+}
+
+h1, h2, h3 {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.text-center { text-align: center; }
+
+/* 2. BARRA DE NAVEGACIÓN */
+.navbar {
+    background-color: #1a0633;
+    padding: 15px 0;
+    text-align: center;
+}
+
+.logo {
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    font-size: 24px;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.menu a {
+    color: #ff007f;
+    text-decoration: none;
+    font-weight: 600;
+    margin: 0 15px;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.menu a:hover {
+    color: #ffd700;
+}
+
+/* 3. HERO SECTION (BANNER) */
+.hero {
+    background-image: linear-gradient(rgba(26, 6, 51, 0.8), rgba(26, 6, 51, 0.8)), url('../img/banner.jpeg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 120px 20px;
+}
+
+.hero h1 {
+    font-size: 48px;
+    line-height: 1.1;
+    margin: 20px 0;
+}
+
+.highlight { color: #ffd700; }
+
+.hero-date {
+    background-color: #ff007f;
+    display: inline-block;
+    padding: 5px 15px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+/* 4. BOTONES */
+.btn-cta {
+    display: inline-block;
+    background-color: #ff007f;
+    color: white;
+    padding: 18px 35px;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    border-radius: 50px;
+    margin-top: 30px;
+    transition: 0.3s;
+    border: 3px solid transparent;
+}
+
+.btn-cta:hover {
+    background-color: transparent;
+    border-color: #ffd700;
+    color: #ffd700;
+}
+
+/* 5. SECCIONES Y TARJETAS */
+.section-white { padding: 80px 0; background-color: #fff; }
+.section-gray { padding: 80px 0; background-color: #f4f4f4; }
+
+.section-title {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 40px;
+    color: #1a0633;
+}
+
+.card {
+    background-color: #fff;
+    border-top: 5px solid #ff007f;
+    padding: 30px;
+    margin-bottom: 30px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+    border-radius: 0 0 10px 10px;
+}
+
+.card h3 { color: #1a0633; margin-bottom: 15px; }
+
+/* 6. IMÁGENES */
+.map-img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 30px auto;
+    border-radius: 15px;
+    border: 5px solid #1a0633;
+}
+
+/* 7. CTA INFERIOR */
+.cta-bottom {
+    background-color: #ffd700;
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.cta-bottom h2 { color: #1a0633; font-size: 36px; }
+
+/* 8. FOOTER */
+.footer {
+    background-color: #1a0633;
+    color: #fff;
+    padding: 60px 0 20px 0;
+    text-align: center;
+}
+
+.copy {
+    margin-top: 20px;
+    font-size: 12px;
+    opacity: 0.7;
+}
+/* --- ESTILOS PARA EL CRONOGRAMA --- */
+.horario-caja {
+    background-color: #fff;
+    border: 2px solid #1a0633; /* Borde morado oscuro */
+    border-radius: 8px;
+    margin: 30px auto;
+    max-width: 600px; /* Limita el ancho para que no se vea estirado */
+    padding: 0;
+    overflow: hidden; /* Evita que el título se salga de las esquinas redondeadas */
+}
+
+.dia-titulo {
+    background-color: #1a0633;
+    color: #ffd700; /* Texto en amarillo brillante */
+    padding: 15px;
+    text-align: center;
+    margin-bottom: 0; /* Quita el margen inferior por defecto del h3 */
+}
+
+.lista-horarios {
+    list-style-type: none; /* Quita las viñetas de la lista */
+    padding: 0;
+    margin: 0;
+}
+
+.lista-horarios li {
+    padding: 15px 20px;
+    border-bottom: 1px solid #eee; /* Línea divisoria muy sutil entre actividades */
+}
+
+.lista-horarios li:last-child {
+    border-bottom: none; /* Quita la línea de la última actividad */
+}
+
+.lista-horarios strong {
+    color: #ff007f; /* Hora en color rosado para resaltar */
+    display: inline-block;
+    width: 80px; /* Este es el truco para que todas las horas ocupen el mismo ancho y parezcan una tabla sin usar Grid */
+}
+/* 9. REDES SOCIALES (FOOTER) */
+.redes-sociales {
+    margin-bottom: 25px;
+}
+
+.redes-sociales p {
+    margin-bottom: 15px;
+    font-weight: bold;
+    color: #ffd700; /* Texto en amarillo para resaltar */
+}
+
+.btn-redes {
+    display: inline-block;
+    background-color: #ff007f; /* Fondo rosado vibrante */
+    color: #ffffff;
+    text-decoration: none;
+    padding: 8px 18px;
+    margin: 0 8px; /* Separación entre los botones */
+    border-radius: 20px; /* Bordes redondeados tipo píldora */
+    font-weight: 600;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.btn-redes:hover {
+    background-color: #ffd700; /* Cambia a amarillo al pasar el mouse */
+    color: #1a0633; /* Texto oscuro para generar buen contraste */
+}
+
